@@ -83,11 +83,11 @@ namespace RaceDay
             r1.Top += trafficSpeed;
             r2.Top += trafficSpeed;
 
-            if (r1.Top > 500)
+            if (r1.Top > 800)
             {
                 ChangeACars(r1);
             }
-            if (r2.Top > 500)
+            if (r2.Top > 1000)
             {
                 ChangeACars(r2);
             }
@@ -132,7 +132,7 @@ namespace RaceDay
             switch(carImage)
             {
                 case 1:
-                    tempCar.Image = Properties.Resources.R;
+                    tempCar.Image = Properties.Resources.pink_car_top_view_hi;
                     break;
                 case 2:
                     tempCar.Image = Properties.Resources.fd57e9449c;
@@ -140,15 +140,21 @@ namespace RaceDay
                 case 3:
                     tempCar.Image = Properties.Resources.fca5fbda9c;
                     break;
+                case 4:
+                    tempCar.Image = Properties.Resources.pngtree_blue_car_top_view_icon_isometric_3d_style_png_image_5177643;
+                    break;
+                case 5:
+                    tempCar.Image = Properties.Resources.R__1_;
+                    break;
             }
-            tempCar.Top = carPosition.Next(75 , 400) * -1;
+            tempCar.Top = carPosition.Next(75 , 500) * -1;
             if ((string)tempCar.Tag == "carLeft")
             {
-                tempCar.Left = carPosition.Next(100, 200);
+                tempCar.Left = carPosition.Next(100, 500);
             }
             if ((string)tempCar.Tag == "carRight")
             {
-                tempCar.Left = carPosition.Next(245 , 300);
+                tempCar.Left = carPosition.Next(150 , 500);
             }
         }
 
