@@ -93,9 +93,29 @@ namespace RaceDay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GoodJob {
+            get {
+                object obj = ResourceManager.GetObject("GoodJob", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Loser {
             get {
                 object obj = ResourceManager.GetObject("Loser", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mistakes {
+            get {
+                object obj = ResourceManager.GetObject("mistakes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -39,7 +39,7 @@ namespace RaceDay
             goLeft = false;
             goRight = false; ;
             score = 0;
-            award.Image = Properties.Resources.tryAgain;
+            award.Image = Properties.Resources.mistakes;
             roadSpeed = 12;
             trafficSpeed = 15;
             r1.Top = carPosition.Next(200, 500) * -1;
@@ -83,11 +83,11 @@ namespace RaceDay
             r1.Top += trafficSpeed;
             r2.Top += trafficSpeed;
 
-            if (r1.Top > 530)
+            if (r1.Top > 500)
             {
                 ChangeACars(r1);
             }
-            if (r2.Top > 530)
+            if (r2.Top > 500)
             {
                 ChangeACars(r2);
             }
@@ -98,11 +98,11 @@ namespace RaceDay
             }
             if (score > 40 && score < 500)
             {
-               award.Image = Properties.Resources.tryAgain;
+               award.Image = Properties.Resources.mistakes;
             }
             if (score > 500 && score < 2000)
             {
-                award.Image = Properties.Resources.Loser;
+                award.Image = Properties.Resources.GoodJob;
                 roadSpeed = 20;
                 trafficSpeed = 22;
             }
@@ -128,7 +128,7 @@ namespace RaceDay
         
         private void ChangeACars(PictureBox tempCar)
         {
-            carImage = random.Next(1, 7);
+            carImage = random.Next(1, 3);
             switch(carImage)
             {
                 case 1:
@@ -144,11 +144,11 @@ namespace RaceDay
             tempCar.Top = carPosition.Next(100 , 400) * -1;
             if ((string)tempCar.Tag == "carLeft")
             {
-                tempCar.Left = carPosition.Next(5, 200);
+                tempCar.Left = carPosition.Next(100, 200);
             }
             if ((string)tempCar.Tag == "carRight")
             {
-                tempCar.Left = carPosition.Next(245 , 422);
+                tempCar.Left = carPosition.Next(245 , 300);
             }
         }
 
