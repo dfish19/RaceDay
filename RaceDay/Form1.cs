@@ -68,20 +68,20 @@ namespace RaceDay
                 player.Left += playerSpeed;
             }
 
-            Track.Top += roadSpeed;
-            award.Top += roadSpeed;
+            track.Top += roadSpeed;
+            track1.Top += roadSpeed;
 
-            if (award.Top > 519)
+            if (track1.Top > 519)
             {
-                award.Top = -519;
+                track1.Top = -519;
             }
-            if (Track.Top > 519)
+            if (track.Top > 519)
             {
-                Track.Top = -519;
+                track.Top = -519;
             }
 
-            r1.Top = trafficSpeed;
-            r2.Top = trafficSpeed;
+            r1.Top += trafficSpeed;
+            r2.Top += trafficSpeed;
 
             if (r1.Top > 530)
             {
@@ -98,7 +98,7 @@ namespace RaceDay
             }
             if (score > 40 && score < 500)
             {
-                award.Image = Properties.Resources.tryAgain;
+               award.Image = Properties.Resources.tryAgain;
             }
             if (score > 500 && score < 2000)
             {
@@ -148,7 +148,7 @@ namespace RaceDay
             }
             if ((string)tempCar.Tag == "carRight")
             {
-                tempCar.Left = carPosition.Next(245 , 200);
+                tempCar.Left = carPosition.Next(245 , 422);
             }
         }
 
@@ -163,6 +163,21 @@ namespace RaceDay
             {
                 goRight = true;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void track2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void keyIsUp(object sender, KeyEventArgs e)
