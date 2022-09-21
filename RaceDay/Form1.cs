@@ -141,7 +141,7 @@ namespace RaceDay
                     tempCar.Image = Properties.Resources.fca5fbda9c;
                     break;
             }
-            tempCar.Top = carPosition.Next(100 , 400) * -1;
+            tempCar.Top = carPosition.Next(75 , 400) * -1;
             if ((string)tempCar.Tag == "carLeft")
             {
                 tempCar.Left = carPosition.Next(100, 200);

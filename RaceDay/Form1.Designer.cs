@@ -97,6 +97,7 @@
             // 
             // player
             // 
+            this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.player.Image = global::RaceDay.Properties.Resources.R;
             this.player.Location = new System.Drawing.Point(249, 347);
             this.player.Name = "player";
@@ -127,6 +128,7 @@
             // 
             // r2
             // 
+            this.r2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.r2.Image = global::RaceDay.Properties.Resources.fd57e9449c;
             this.r2.Location = new System.Drawing.Point(370, 10);
             this.r2.Name = "r2";
@@ -138,8 +140,9 @@
             // 
             // r1
             // 
+            this.r1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.r1.Image = global::RaceDay.Properties.Resources.fca5fbda9c;
-            this.r1.Location = new System.Drawing.Point(12, 3);
+            this.r1.Location = new System.Drawing.Point(12, 184);
             this.r1.Name = "r1";
             this.r1.Size = new System.Drawing.Size(95, 150);
             this.r1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
